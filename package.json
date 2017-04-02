@@ -1,0 +1,29 @@
+{
+  "name": "no-undefined-style-loader",
+  "version": "1.0.0",
+  "description": "Warns when an undefined key is referenced on a required CSS file",
+  "main": "index.js",
+  "repository": "https://github.com/andrewbranch/no-undefined-style-loader",
+  "license": "MIT",
+  "author": {
+    "name": "Andrew Branch",
+    "email": "andrew@wheream.io"
+  },
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-prettier": "^1.5.0",
+    "eslint-plugin-prettier": "^2.0.1",
+    "husky": "^0.13.3",
+    "lint-staged": "^3.4.0",
+    "prettier": "^0.22.0"
+  }
+}
