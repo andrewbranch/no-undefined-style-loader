@@ -1,4 +1,5 @@
-[![CircleCI](https://circleci.com/gh/andrewbranch/no-undefined-style-loader.svg?style=svg)](https://circleci.com/gh/andrewbranch/no-undefined-style-loader)
+[![npm](https://img.shields.io/npm/v/no-undefined-style-loader.svg)](https://www.npmjs.com/package/no-undefined-style-loader)
+[![CircleCI](https://img.shields.io/circleci/project/github/andrewbranch/no-undefined-style-loader.svg)](https://circleci.com/gh/andrewbranch/no-undefined-style-loader)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 # no-undefined-style-loader
