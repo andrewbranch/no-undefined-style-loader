@@ -1,7 +1,7 @@
 {
   "name": "no-undefined-style-loader",
   "version": "1.0.0",
-  "description": "Warns when an undefined key is referenced on a required CSS file",
+  "description": "Webpack loader that warns when an undefined key is referenced on a required CSS file",
   "main": "index.js",
   "repository": "https://github.com/andrewbranch/no-undefined-style-loader",
   "license": "MIT",
