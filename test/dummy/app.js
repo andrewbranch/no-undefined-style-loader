@@ -1,1 +1,4 @@
-module.exports = require("./app.css");
+module.exports = {
+  warning: require("./warning.css"),
+  failing: require("./failing.css")
+};

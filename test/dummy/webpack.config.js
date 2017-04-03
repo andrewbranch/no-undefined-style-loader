@@ -1,5 +1,13 @@
 var path = require("path");
 
+var cssLoader = {
+  loader: "css-loader",
+  options: {
+    modules: true,
+    localIdentName: "[local]-hashed"
+  }
+};
+
 module.exports = {
   context: __dirname,
   entry: "./app",
@@ -13,18 +21,22 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /warning\.css$/,
         use: [
           {
             loader: "no-undefined-style-loader"
           },
+          cssLoader
+        ]
+      },
+      {
+        test: /failing\.css$/,
+        use: [
           {
-            loader: "css-loader",
-            options: {
-              modules: true,
-              localIdentName: "[local]-hashed"
-            }
-          }
+            loader: "no-undefined-style-loader",
+            options: { fail: true }
+          },
+          cssLoader
         ]
       }
     ]
