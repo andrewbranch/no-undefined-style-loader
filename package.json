@@ -10,6 +10,8 @@
     "email": "andrew@wheream.io"
   },
   "scripts": {
+    "pretest": "webpack --config test/dummy/webpack.config.js",
+    "test": "tape test | tap-spec",
     "precommit": "lint-staged"
   },
   "lint-staged": {
@@ -26,6 +28,9 @@
     "husky": "^0.13.3",
     "lint-staged": "^3.4.0",
     "prettier": "^0.22.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3",
+    "testdouble": "^2.1.2",
     "webpack": "^2.3.2"
   },
   "dependencies": {

@@ -20,7 +20,10 @@ module.exports = {
           },
           {
             loader: "css-loader",
-            options: { modules: true }
+            options: {
+              modules: true,
+              localIdentName: "[local]-hashed"
+            }
           }
         ]
       }
