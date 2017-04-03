@@ -1,3 +1,1 @@
-var css = require("./app.css");
-console.log(css);
-module.exports = css;
+module.exports = require("./app.css");
