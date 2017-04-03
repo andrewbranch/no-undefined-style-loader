@@ -3,6 +3,7 @@ var path = require("path");
 module.exports = {
   context: __dirname,
   entry: "./app",
+  target: "node",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "app.js",
@@ -15,13 +16,11 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: "style-loader"
-          },
-          {
             loader: "no-undefined-style-loader"
           },
           {
-            loader: "css-loader"
+            loader: "css-loader",
+            options: { modules: true }
           }
         ]
       }
