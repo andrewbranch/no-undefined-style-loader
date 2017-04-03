@@ -1,3 +1,6 @@
+[![CircleCI](https://circleci.com/gh/andrewbranch/no-undefined-style-loader.svg?style=svg)](https://circleci.com/gh/andrewbranch/no-undefined-style-loader)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
 # no-undefined-style-loader
 
 Webpack loader that warns when an undefined class name is referenced on a CSS file you imported into JavaScript. Works when chained after [css-loader](https://github.com/webpack-contrib/css-loader) with the [modules](https://github.com/webpack-contrib/css-loader#css-modules) option enabled.
